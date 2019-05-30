@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org/">
-<head th:replace="fragments :: head">
-</head>
-<body>
 
-<div th:replace="fragments :: page-header"></div>
+    <head th:replace="fragments :: head"></head>
 
-<div class="container body-content">
+    <body>
 
-    <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
+        <div th:replace="fragments :: page-header"></div>
 
-    <span th:if="${jobs}" th:text="${jobs.size()}" th:class="count"></span>
-    <span th:if="${jobs}" th:class="count">Result(s)</span>
-    
-    <table th:replace="search :: table"></table>
+        <div class="container body-content">
 
-</div>
+            <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
-</body>
+            <span th:if="${jobs}" th:text="${jobs.size()}" th:class="count"></span>
+            <span th:if="${jobs}" th:class="count">Result(s)</span>
+
+            <table th:replace="search :: table"></table>
+
+        </div>
+
+    </body>
 </html>

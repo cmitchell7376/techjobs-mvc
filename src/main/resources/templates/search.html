@@ -36,6 +36,9 @@
 
     <hr />
 
+    <span th:if="${jobs}" th:text="${jobs.size()}" th:class="count"></span>
+    <span th:if="${jobs}" th:class="count">Result(s)</span>
+
     <table th:each="job : ${jobs}" th:class="job-listing" th:fragment="table">
         <tr th:each="jobEntry : ${job}">
                 <td th:text="${jobEntry.key}"></td>

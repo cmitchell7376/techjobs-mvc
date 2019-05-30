@@ -27,3 +27,12 @@ table.job-listing td:last-child {
 label {
     margin-right: 15px;
 }
+
+.count{
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
